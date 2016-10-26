@@ -2,26 +2,17 @@
 
 ###**Fertility, Life Expectancy and GDP Around the World: 1960-2014** 
 
-Click [here](https://tihanam.github.io/practical_machine_learning/) to try out this shiny application
+Click [here](https://tixie21.shinyapps.io/week4project/) to try out this shiny application.
 
-- [Practical_Machine_Learning_project.md] (https://github.com/TihanaM/practical_machine_learning/blob/gh-pages/Practical_Machine_Learning_project.md): Markdown document for project report.
-- [Practical_Machine_Learning_project.Rmd] (https://github.com/TihanaM/practical_machine_learning/blob/gh-pages/Practical_Machine_Learning_project.Rmd): R markdown document for project report.
-- [Practical_Machine_Learning_project.html] (https://github.com/TihanaM/practical_machine_learning/blob/gh-pages/Practical_Machine_Learning_project.html): Compiled html file for project report.
+###**Description**
+This shiny app highlights the evolution of fertility, life expectancy and GDP per capita around the world from 1960 to 2014. It allows the user to input a year, for which the average fertility, life expectancy and GDP per capita are displayed in output boxes. It also summarizes the data in an interactive graph for the selected year, and highlights the three parameters world maps which can be found under the different tabs in the main panel. 
 
-- pml_data_training.csv and pml_data_testing.csv are the provided training and testing data sets for the project.
+###**Data**
+The three csv data files used for this application have been obtained from the Data Worldbank:
+- [Fertility rate (births per woman)] (http://data.worldbank.org/indicator/SP.DYN.TFRT.IN)
+- [Life expectancy at birth (years)] (http://data.worldbank.org/indicator/SP.DYN.LE00.IN)
+- [GDP per capita (current international $)] (http://data.worldbank.org/indicator/NY.GDP.PCAP.PP.CD)
 
 
 
-##**1 Introduction (Synopsis)**
 
-Owing to the advancements in wearable technology for the tracking of personal activity, such as Jawbone Up, Nike FuelBand, and Fitbit, a large amount of data on physical performance is easily collected. The primary goal of these devices is to allow customers to quantify self movement, but often, the quality of the exercise performance gets neglected. In this project, data collected from 6 individuals while performing barbell lifts from accelerometers on the belt, forearm, arm, as well as the dumbbell itself, is used in order to build a predictive model for the classification of how well the weightlifting exercise was performed. 
-
-The quality of the execution of the weightlifting exercise was defined in five different categories:  
-
-*  **CLASS A**: exactly according to the specification  
-*  **CLASS B**: throwing the elbows to the front  
-*  **CLASS C**: lifting the dumbbell only halfway
-*  **CLASS D**: lowering the dumbbell only halfway
-*  **CLASS E**: throwing the hips to the front
-
-The machine learning algorithm developed in this project is outlined below. The classification tree approach, the generalized boosted model, the random forest classification were compared and assessed for accuracy. Consequently the most accurate model, in this case the random forest classification, was applied to the test data set in order to obtain predictions in which manner the exercises were performed in (class A to E).
